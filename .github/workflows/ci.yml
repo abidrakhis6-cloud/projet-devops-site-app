@@ -12,5 +12,5 @@ jobs:
       - name: Récupération du code
         uses: actions/checkout@v3
 
-      - name: Build Docker image
+      - name: Build Docker
         run: docker build -t site-devops ./site-web
