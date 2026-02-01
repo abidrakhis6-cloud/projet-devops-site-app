@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fonctionnement — Plateforme DevOps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body class="light">
+
+<header>
+  <div class="logo">DevOps Secure</div>
+
+  <nav id="nav">
+    <a href="index.html">Accueil</a>
+    <a href="objectif.html">Objectif</a>
+    <a href="fonctionnement.html">Fonctionnement</a>
+    <a href="securite.html">Sécurité</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="actions">
+    <button id="theme-toggle">🌙</button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+ 
+<a class="back-btn" href="index.html">← Retour</a>
+
+<!-- FONCTIONNEMENT -->
+<section id="fonctionnement" class="section">
+  <img src="app.jpeg">
+  <div>
+    <h2>Fonctionnement global</h2>
+    <p>
+      Le fonctionnement repose sur une chaîne CI/CD automatisée : à chaque push dans
+      le dépôt source, des vérifications automatisées sont lancées (lint, tests unitaires,
+      tests d’intégration et scans de sécurité). Si toutes les étapes sont concluantes,
+      le pipeline construit une image containerisée, la marque (tag) avec un identifiant
+      immuable, et la pousse vers un registre privé d’images.
+    </p>
+
+    <p>
+      Ensuite l’orchestrateur (Docker Compose, Swarm ou Kubernetes selon le contexte)
+      récupère la nouvelle image et orchestre le déploiement vers les environnements
+      d’intégration, de préproduction puis de production suivant des politiques de
+      déploiement choisies (rolling, blue/green, canary). Chaque déploiement est accompagné
+      d’un ensemble de vérifications post-déploiement (smoke tests, contrôles d’état, métriques)
+      pour valider l’intégrité du service.
+    </p>
+
+    <p>
+      La plateforme inclut également une gestion d’artefacts (binaries, packages), une
+      gestion des configurations via des templates et variables d’environnement, et une
+      stratégie claire pour la gestion des secrets (vaults, providers de secrets, ou
+      intégration cloud). Les pipelines sont décrits en tant que code pour garantir leur
+      traçabilité et reproductibilité.
+    </p>
+
+    <p>
+      Pour assurer résilience et observabilité, la solution intègre des composants de
+      monitoring (collecte métriques, alerting), des traces distribuées et la centralisation
+      des logs. Ces éléments permettent d’automatiser la remédiation et d’accélérer les
+      diagnostics en cas d’incident, tout en conservant un historique complet des actions.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 — Abid Rakhis Ahmat
+</footer>
+
+</body>
+</html>

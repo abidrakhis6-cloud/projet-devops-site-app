@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sécurité — Plateforme DevOps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body class="light">
+
+<header>
+  <div class="logo">DevOps Secure</div>
+
+  <nav id="nav">
+    <a href="index.html">Accueil</a>
+    <a href="objectif.html">Objectif</a>
+    <a href="fonctionnement.html">Fonctionnement</a>
+    <a href="securite.html">Sécurité</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="actions">
+    <button id="theme-toggle">🌙</button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+ 
+<a class="back-btn" href="index.html">← Retour</a>
+
+<!-- SECURITE -->
+<section id="securite" class="section reverse">
+  <img src="architect.jpeg">
+  <div>
+    <h2>Sécurité et supervision</h2>
+    <p>
+      La sécurité est intégrée nativement dans le cycle de vie du développement et du
+      déploiement. Cela implique l’application de principes “shift-left” : tests de sécurité
+      et analyse statique/dynamique dès les premières étapes du pipeline, scan automatique
+      des images pour vulnérabilités connues, et validation des dépendances. Les images non
+      conformes sont bloquées avant d’atteindre les environnements de production.
+    </p>
+
+    <p>
+      La gestion des secrets utilise des coffres sécurisés (vault) ou des services managés
+      qui permettent un accès contrôlé et l’audit de toutes les opérations. Les communications
+      entre services sont chiffrées (TLS) et les accès sont régis par des politiques RBAC
+      strictes. Les comptes de service disposent uniquement des privilèges nécessaires
+      (principe du moindre privilège).
+    </p>
+
+    <p>
+      Côté supervision, la collecte centralisée des logs, la corrélation des événements
+      et l’analyse comportementale permettent de détecter des anomalies en temps réel.
+      Des alertes contextualisées sont envoyées aux équipes concernées avec des playbooks
+      de réponse aux incidents. Des audits réguliers et des tests d’intrusion complètent
+      le dispositif pour garantir l’amélioration continue.
+    </p>
+
+    <p>
+      Enfin, des politiques de sauvegarde et de reprise après sinistre (disaster recovery)
+      sont définies pour préserver la disponibilité des données critiques et réduire le
+      temps de rétablissement. L’ensemble vise à fournir une plateforme sécurisée, conforme
+      et résiliente face aux menaces actuelles et futures.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 — Abid Rakhis Ahmat
+</footer>
+
+</body>
+</html>

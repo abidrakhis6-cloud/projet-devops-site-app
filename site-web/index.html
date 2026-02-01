@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Projet DevOps</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <meta charset="UTF-8">
+  <title>Plateforme DevOps Sécurisée</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h1>🚀 Projet DevOps</h1>
-<p>Site web prêt pour Docker.</p>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body class="light">
+
+<header>
+  <div class="logo">DevOps Secure</div>
+
+  <nav id="nav">
+    <a href="index.html">Accueil</a>
+    <a href="objectif.html">Objectif</a>
+    <a href="fonctionnement.html">Fonctionnement</a>
+    <a href="securite.html">Sécurité</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="actions">
+    <button id="theme-toggle">🌙</button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<!-- ACCUEIL -->
+<section id="accueil" class="section">
+  <img src="devops.jpeg">
+  <div>
+    <h1>Plateforme DevOps sécurisée</h1>
+    <p>
+      Ce projet présente une Plateforme DevOps sécurisée pour le déploiement d’un site web
+      et d’une application containerisée. L’objectif général est de construire une chaîne
+      d’intégration et de livraison continues (CI/CD) robuste, reproductible et auditable,
+      permettant aux équipes de développement et d’exploitation de collaborer efficacement
+      tout en garantissant la confidentialité, l’intégrité et la disponibilité des services.
+    </p>
+
+    <p>
+      La solution combine des pratiques DevOps modernes (automatisation des pipelines, gestion
+      d’artefacts et d’images, orchestration de conteneurs) et des mécanismes de cybersécurité
+      (contrôles d’accès, gestion des secrets, scans de vulnérabilités, chiffrement en transit
+      et au repos). Elle vise à réduire le temps de mise en production, minimiser les erreurs
+      humaines et fournir des processus de déploiement réversibles (rollbacks, blue/green,
+      canary) pour limiter l’impact des régressions.
+    </p>
+
+    <p>
+      Sur cette page d’accueil, vous trouverez une présentation synthétique du projet, ses
+      motivations, les principaux composants techniques et les bénéfices attendus pour
+      une organisation. Chaque page du site détaille une partie spécifique : les objectifs
+      stratégiques, le fonctionnement du pipeline, les mesures de sécurité, la supervision
+      et le profil de l’auteur. Le contenu fourni ici est conçu pour être clair pour des
+      responsables techniques, des architectes et des étudiants souhaitant comprendre comment
+      concevoir et exploiter une plateforme DevOps sécurisée en production.
+    </p>
+
+    <p>
+      Enfin, le projet insiste sur la traçabilité et la transparence : toutes les étapes de
+      construction des images, des tests et des déploiements sont consignées dans des logs
+      centralisés, horodatés et conservés pour permettre des audits. L’approche privilégie
+      l’infrastructure as code (IaC), l’automatisation des tests de sécurité et la surveillance
+      continue afin d’atteindre des niveaux de service mesurables et un retour d’expérience
+      itératif. Cette page sert d’introduction et de guide pour naviguer vers des chapitres
+      plus détaillés sur chaque aspect du projet.
+    </p>
+  </div>
+</section>
+
+
+<footer>
+  © 2026 — Abid Rakhis Ahmat
+</footer>
 
 </body>
 </html>
